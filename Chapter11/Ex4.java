@@ -1,7 +1,11 @@
 public class Ex4
 {
-    public status void main( String[] args )
+    public static void main( String[] args )
     {
-        
+        String str = new String( "Golf is a good walk spoiled." ); // create the original object
+
+        String sub = str.substring(2, 9); //create a new object from the original
+
+        System.out.println( sub );
     }
 }
