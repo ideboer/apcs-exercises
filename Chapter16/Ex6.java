@@ -9,9 +9,9 @@ public class Ex6
         double temp, wind_speed, wind_chill;
 
         System.out.println("Enter Wind Speed: ");
-        wind_speed = scan.nextInt();
+        wind_speed = scan.nextDouble();
         System.out.println("Enter Temperature: ");
-        temp = scan.nextInt();
+        temp = scan.nextDouble();
 
         if ( (wind_speed < 3) || (temp > 50) )
         {

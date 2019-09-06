@@ -10,11 +10,11 @@ public class Ex7
         final double bill_2_5 = 2500000000.0;
 
         System.out.println("Years: ");
-        years = scan.nextInt();
+        years = scan.nextDouble();
         System.out.println("Months: ");
-        months = scan.nextInt();
+        months = scan.nextDouble();
         System.out.println("Days: ");
-        days = scan.nextInt();
+        days = scan.nextDouble();
 
         month_day_values = new double[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
