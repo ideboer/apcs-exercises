@@ -16,18 +16,19 @@ public class Ex4
         int factorialCount = x - 1;
         int currentFactorial = x;
 
-        while (currentTerm >= Math.pow(1.0, -12) )
+        while (factorialCount >= 1)
+        {
+            currentFactorial = currentFactorial * factorialCount;
+            factorialCount --;
+        }
+
+        while (currentTerm >= 1.0e-12)
         {
             currentExponent = Math.pow(x, count);
-            while (factorialCount >= 1)
-            {
-                currentFactorial = currentFactorial * factorialCount;
-                factorialCount --;
-            }
 
             currentTerm = (currentExponent / currentFactorial);
             sum += currentTerm;
-            System.out.println(sum);
+            System.out.println(currentTerm);
             count ++;
         }
 
