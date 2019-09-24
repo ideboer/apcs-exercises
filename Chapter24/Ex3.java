@@ -6,12 +6,12 @@ public class Ex3
     {
         Scanner scan = new Scanner( System.in );
         System.out.println("Enter N: ");
-        int N = scan.nextInt();
+        int n = scan.nextInt();
         int sum = 0;
 
-        for ( int count = 1; count <= N; count++ )
+        for ( int count = 1; count < n; count ++ )
         {
-            if ( (N % count) == 0 )
+            if ( (n % count) == 0 )
             {
                 sum += count;
             }
@@ -19,13 +19,13 @@ public class Ex3
 
         System.out.println("Sum: " + sum);
 
-        if (sum == N)
+        if (sum == n)
         {
             System.out.println("N is a perfect number");
         }
         else
         {
-            System.out.println("not a perfect number")
+            System.out.println("not a perfect number");
         }
     }
 }
