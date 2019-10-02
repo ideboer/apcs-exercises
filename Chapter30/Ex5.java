@@ -8,6 +8,8 @@ public class Ex5
         Random random = new Random();
         
         String choices = "abcdefghijklmnopqrstuvwxyz";
+        choices = choices + choices.toUpperCase();
+        choices = choices + "`~1!2@3#4$5%6^7&8*9(0)-_=+[{]}<,>.?/";
         boolean guess = false;
         String password = "";
 
@@ -19,7 +21,7 @@ public class Ex5
 
         for (i = 0; !guess; i++)
         {
-            for (int count = 0; count < 5; count ++)
+            for (int count = 0; count < 3; count ++)
             {
                 password = password + choices.charAt( random.nextInt(choices.length() ) );
                 if (password.equals(realPassword))
