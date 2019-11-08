@@ -44,4 +44,12 @@ class Jam
        System.out.println("No jam in the Jar!");
   }
 
+  public int getCapacity() {
+    return capacity;
+  }
+
+  public void setCapacity(int newCapacity) {
+    capacity = newCapacity;
+  }
+
 }

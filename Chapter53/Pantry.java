@@ -73,4 +73,29 @@ class Pantry
   {
     selected . spread( oz ) ;
   }
+
+  public void replace( Jam j, int slot ) {
+    
+    if (slot == 1) {
+      jar1 = j;
+    }
+    else if (slot == 2) {
+      jar2 = j;
+    }
+    else if (slot == 3) {
+      jar3 = j;
+    }
+  }
+
+  public void mixedFruit() {
+
+    if (jar1.getCapacity() <= 2 && jar2.getCapacity() <= 2 && jar3.getCapacity() <= 2 ) {
+
+      jar1.setCapacity(jar1.getCapacity() + jar2.getCapacity() + jar3.getCapacity());
+      jar2 = null;
+      jar3 = null;
+
+    }
+
+  }
 }
