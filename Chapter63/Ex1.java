@@ -1,4 +1,4 @@
-class Weight {
+class Ex1 {
   private int[] data;
   
   // Constructor
